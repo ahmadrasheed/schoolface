@@ -30,7 +30,7 @@ class customersController extends Controller
  }
  public function store(){
 
-        $this->authorize('create',Customer::class);
+        //$this->authorize('create',Customer::class);
 
         $c=Customer::create($this->validatedata());
         $this->storeImage($c);
