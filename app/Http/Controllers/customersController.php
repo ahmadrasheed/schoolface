@@ -76,7 +76,7 @@ class customersController extends Controller
  public function storeImage($customer){
     if(request()->has('image')){
         $customer->update([
-            'image'=>request()->image->store('uploads','App/public'),
+            'image'=>request()->image->store('uploads','App\public'),
         ]);
     }
  }
